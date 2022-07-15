@@ -215,7 +215,7 @@ async function setWeather(lang = "en") {
 }
 
 async function setRandomQuote() {
-  const quotes = "js/data.json";
+  const quotes = "./data.json";
   const load = await fetch(quotes);
   const data = await load.json();
   const RANDOM_0_1642 = getRandomNum(0, 1642);
